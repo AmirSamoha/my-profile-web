@@ -6,6 +6,7 @@ import { Image, Hide, Description, About } from "../styles";
 //
 import { motion } from "framer-motion";
 import Wave from "./Wave";
+import { Link } from "react-router-dom";
 
 const AboutSection = () => {
   return (
@@ -32,7 +33,7 @@ const AboutSection = () => {
           </Hide>
         </div>
         <p>Contact Us for eny photography or ideas that you have. </p>
-        <button>Contact Us</button>
+        <Link to="/contact"><button>Contact Us</button></Link>
       </Description>
       {/* styled Image */}
       <Image>
