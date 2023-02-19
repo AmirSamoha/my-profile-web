@@ -2,7 +2,10 @@ import React from "react";
 import home1 from "../img/home1.png";
 //styled
 // import styled from "styled-components";
-import {Image, Hide, Description, About} from '../styles'
+import { Image, Hide, Description, About } from "../styles";
+//
+import { motion } from "framer-motion";
+import Wave from "./Wave";
 
 const AboutSection = () => {
   return (
@@ -12,7 +15,12 @@ const AboutSection = () => {
       <Description>
         <div className="title">
           <Hide>
-            <h2>We work to make</h2>
+            <motion.h2
+              animate={{ opacity: 1, transition: { duration: 2 } }}
+              initial={{ opacity: 0 }}
+            >
+              We work to make
+            </motion.h2>
           </Hide>
           <Hide>
             <h2>
@@ -30,10 +38,9 @@ const AboutSection = () => {
       <Image>
         <img src={home1} alt="camera" />
       </Image>
+      <Wave />
     </About>
   );
 };
-
-
 
 export default AboutSection;

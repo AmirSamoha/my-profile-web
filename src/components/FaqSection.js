@@ -1,6 +1,7 @@
 import React from "react";
 import { About } from "../styles";
 import styled from "styled-components";
+import Toggle from "./Toggle";
 
 function FaqSection() {
   return (
@@ -8,6 +9,7 @@ function FaqSection() {
       <h2>
         Any Questions <span>FAQ</span>
       </h2>
+      
       <div className="question">
         <h4>How Do I Start?</h4>
         {/* לשנות למשהו שמתאים אליי  */}
@@ -16,6 +18,7 @@ function FaqSection() {
           <p>Lorem ipsum dolor sit amet.</p>
         </div>
       </div>
+      
       <div className="faq-line"></div>
       <div className="question">
         <h4>Daily Schedule?</h4>
