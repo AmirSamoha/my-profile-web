@@ -7,18 +7,18 @@ const Nav = () => {
     <NavStayeld>
       <h1>
         <Link id="logo" to="/">
-          Capture
+          Amir Samoha
         </Link>
       </h1>
       <ul>
         <li>
-          <Link to="/aboutus">1. About Us</Link>
+          <Link to="/aboutus">1. About Me</Link>
         </li>
         <li>
-          <Link to="/work">2. Our Work</Link>
+          <Link to="/work">2. My Work</Link>
         </li>
         <li>
-          <Link to="/contact">3. Contact Us</Link>
+          <Link to="/contact">3. Contact Me</Link>
         </li>
       </ul>
     </NavStayeld>
@@ -53,6 +53,15 @@ const NavStayeld = styled.div`
     padding-left: 10rem;
     position: relative;
   }
+  @media (max-width: 800px){
+      flex-direction: column;
+      padding: 2rem 0rem;
+      ul{
+        padding: 2rem;
+        justify-content: center;
+        width: 100%;
+      }
+      }
 `;
 
 export default Nav;

@@ -2,9 +2,7 @@ import React from "react";
 //import icons
 import clock from "../img/clock.svg";
 import diaphragm from "../img/diaphragm.svg";
-import money from "../img/money.svg";
 import teamwork from "../img/teamwork.svg";
-import home2 from "../img/home2.png";
 //styeld component
 import { Image, Description, About } from "../styles";
 import styled from "styled-components";
@@ -22,33 +20,28 @@ function ServicesSection() {
               <img src={clock} alt="clock" />
               <h3>Efficient</h3>
             </div>
-            <p>Lorem ipsum dolor sit amet.</p>
+            <p>
+              Achieving the best results while making maximum use of the means.
+            </p>
           </Card>
           <Card>
             <div className="icon">
               <img src={teamwork} alt="team" />
               <h3>Teamwork</h3>
             </div>
-            <p>Lorem ipsum dolor sit amet.</p>
+            <p>Functioning within a team to achieve the goal.</p>
           </Card>
           <Card>
             <div className="icon">
               <img src={diaphragm} alt="diaphragm" />
-              <h3>Diaphragm</h3>
+              <h3>Personal Development</h3>
             </div>
-            <p>Lorem ipsum dolor sit amet.</p>
-          </Card>
-          <Card>
-            <div className="icon">
-              <img src={money} alt="clock" />
-              <h3>Afforable</h3>
-            </div>
-            <p>Lorem ipsum dolor sit amet.</p>
+            <p>Taking responsibility, enjoying the process in an independent and group way.</p>
           </Card>
         </Cards>
       </Description>
       <Image>
-        <img src={home2} alt="" />
+        <img src="https://cdn.pixabay.com/photo/2018/09/22/11/34/business-3695073_960_720.jpg" alt="" />
       </Image>
     </Services>
   );
@@ -67,6 +60,9 @@ const Services = styled(About)`
 const Cards = styled.div`
   display: flex;
   flex-wrap: wrap;
+  @media (max-width: 1300px){
+      justify-content: center;
+      }
 `;
 
 const Card = styled.div`
@@ -75,9 +71,9 @@ const Card = styled.div`
     display: flex;
     align-items: center;
     h3 {
-        margin-left: 1rem;
-        font-size: 25px;
-        /* background: white;
+      margin-left: 1rem;
+      font-size: 25px;
+      /* background: white;
         color: black;
         padding: 1rem; */
     }

@@ -1,8 +1,7 @@
 import React from "react";
-import home1 from "../img/home1.png";
 //styled
-// import styled from "styled-components";
-import { Image, Hide, Description, About } from "../styles";
+import styled from "styled-components";
+import { Hide, Description, About } from "../styles";
 //
 import { motion } from "framer-motion";
 import Wave from "./Wave";
@@ -20,28 +19,36 @@ const AboutSection = () => {
               animate={{ opacity: 1, transition: { duration: 2 } }}
               initial={{ opacity: 0 }}
             >
-              We work to make
+              <span>Amir Samoha Fullstack developer </span>
             </motion.h2>
           </Hide>
           <Hide>
-            <h2>
-              your <span>dreams</span> come
-            </h2>
+            <FontStyle>
+              Enthusiastic and highly motivated developer, fast learner and Self
+              learning ability.
+            </FontStyle>
           </Hide>
           <Hide>
-            <h2>true.</h2>
+            <FontStyle>
+              High work ethic, responsibility, interpersonal communication and
+              excellent human relations.
+            </FontStyle>
           </Hide>
         </div>
-        <p>Contact Us for eny photography or ideas that you have. </p>
-        <Link to="/contact"><button>Contact Us</button></Link>
+        <p>HTML | CSS | JavaScript | React js | python </p>
+        <Link to="/contact">
+          <button>Contact Me</button>
+        </Link>
       </Description>
-      {/* styled Image */}
-      <Image>
-        <img src={home1} alt="camera" />
-      </Image>
+
       <Wave />
     </About>
   );
 };
+
+const FontStyle = styled.h2`
+  font-family: cursive;
+  font-size: 2.5rem;
+`
 
 export default AboutSection;

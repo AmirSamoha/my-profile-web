@@ -1,40 +1,38 @@
 import React from "react";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
-//images
-import athlete from "../img/athlete-small.png";
-import theracer from "../img/theracer-small.png";
-import goodtimes from "../img/goodtimes-small.png";
+
 //animation
 import { motion } from "framer-motion";
 import { pageAnimation, lineAnimation } from "./animation";
 
-
-
 const OurWork = () => {
   return (
     <Work variants={pageAnimation} initial="hidden" animate="show" exit="exit">
-      <Movie>
-        <Title>The Athlete</Title>
-        <motion.div variants={lineAnimation} className="line"></motion.div>
-        <Link>
-          <img src={athlete} alt="Athlete" />
+      <ProjectTitle>React Project</ProjectTitle>
+      <Project>
+        <Link to="https://playermusic-amirsamoha.netlify.app">
+          <Title>The player music</Title>
         </Link>
-      </Movie>
-      <Movie>
-        <Title>The Racer</Title>
         <motion.div variants={lineAnimation} className="line"></motion.div>
-        <Link>
-          <img src={theracer} alt="theracer" />
+      </Project>
+
+      <ProjectTitle>Html&CSS and JS </ProjectTitle>
+      <Project>
+        <Link>{/* <img src={theracer} alt="theracer" /> */}</Link>
+        <Title>dog information</Title>
+      </Project>
+      <Project>
+        <Link to="https://web-clock-amir-samoha.netlify.app">
+          <Title>clock web</Title>
         </Link>
-      </Movie>
-      <Movie>
-        <Title>Good Times</Title>
+      </Project>
+      <Project>
+        <Link to="https://counter-game-amir-samoha.netlify.app">
+          <Title>Counter Game</Title>
+        </Link>
         <motion.div variants={lineAnimation} className="line"></motion.div>
-        <Link>
-          <img src={goodtimes} alt="goodtimes" />
-        </Link>
-      </Movie>
+      </Project>
     </Work>
   );
 };
@@ -48,7 +46,7 @@ const Work = styled(motion.div)`
   }
 `;
 
-const Movie = styled.div`
+const Project = styled.div`
   padding-bottom: 10rem;
   .line {
     height: 0.5rem;
@@ -60,11 +58,19 @@ const Movie = styled.div`
     height: 70vh;
     object-fit: cover;
   }
+  a {
+    text-decoration: none;
+  }
 `;
 
 const Title = styled.h2`
   color: white;
   font-family: monospace;
-`
+`;
+
+const ProjectTitle = styled.h1`
+  font-size: 5rem;
+  color: #23d997;
+`;
 
 export default OurWork;
