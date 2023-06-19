@@ -35,7 +35,7 @@ const AboutSection = () => {
             </FontStyle>
           </Hide>
         </div>
-        <p>HTML | CSS | JavaScript | React js | python </p>
+        <p>HTML | CSS | JavaScript | React.js | Node.js | MongoDB </p>
         <Link to="/contact">
           <button>Contact Me</button>
         </Link>

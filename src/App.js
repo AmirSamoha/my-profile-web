@@ -15,7 +15,6 @@ function App() {
       <GlobalStyle />
       <Nav />
       <Routes>
-        {/* הרגע שהנתיב ביו אר אל יהיה עם סלאש והשם שלו ידע לעבור לדף הזה */}
         <Route path="/" exact element={<AboutUs />} />
         <Route path="/aboutus" exact element={<AboutUs />} />
         <Route path="/work" exact element={<OurWork />} />

@@ -7,9 +7,9 @@ import linkedin from "../img/linkedin.svg";
 import { Link } from "react-router-dom";
 
 const ContactUs = () => {
-  const [mail, setMail] = useState("");
+  const [mail, setMail] = useState(false);
   const showMail = () => {
-    setMail("Amir.samoha42@gmail.com");
+    setMail(!mail);
   };
 
   return (
@@ -23,8 +23,8 @@ const ContactUs = () => {
         <Social>
           <Circle />
           <h3>Send Me an Email</h3>
-          <Icon src={email} alt="mail"  onClick={showMail} />
-          <p >{mail}</p>
+          <Icon src={email} alt="mail" onClick={showMail} />
+          <p>{mail ? "Amir.samoha42@gmail.com" : null}</p>
         </Social>
         <Social>
           <Circle />
@@ -68,19 +68,19 @@ const Social = styled.div`
   }
   h3 {
     padding: 2rem;
-    font-size: 3rem;
+    font-size: 2rem;
   }
 `;
 
 const Icon = styled.img`
   cursor: pointer;
   margin: 1rem;
-  padding-left: 3rem;
+  padding-left: 7.2rem;
 `;
 const Icongithub = styled.img`
   cursor: pointer;
   margin: 1rem;
-  padding-left: 17.5rem;
+  padding-left: 17.2rem;
 `;
 const Iconlinkedin = styled.img`
   cursor: pointer;

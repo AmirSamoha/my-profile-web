@@ -12,13 +12,13 @@ const Nav = () => {
       </h1>
       <ul>
         <li>
-          <Link to="/aboutus">1. About Me</Link>
+          <Link to="/aboutus">About Me</Link>
         </li>
         <li>
-          <Link to="/work">2. My Work</Link>
+          <Link to="/work">My Work</Link>
         </li>
         <li>
-          <Link to="/contact">3. Contact Me</Link>
+          <Link to="/contact">Contact Me</Link>
         </li>
       </ul>
     </NavStayeld>
@@ -53,15 +53,15 @@ const NavStayeld = styled.div`
     padding-left: 10rem;
     position: relative;
   }
-  @media (max-width: 800px){
-      flex-direction: column;
-      padding: 2rem 0rem;
-      ul{
-        padding: 2rem;
-        justify-content: center;
-        width: 100%;
-      }
-      }
+  @media (max-width: 800px) {
+    flex-direction: column;
+    padding: 2rem 0rem;
+    ul {
+      padding: 2rem;
+      justify-content: center;
+      width: 100%;
+    }
+  }
 `;
 
 export default Nav;
