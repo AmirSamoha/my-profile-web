@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { pageAnimation, lineAnimation } from "./animation";
 
-const OurWork = () => {
+const MyWork = () => {
   return (
     <Work variants={pageAnimation} initial="hidden" animate="show" exit="exit">
       <Project>
@@ -41,7 +41,7 @@ const OurWork = () => {
           </Link>
         </ProjectDescription>
       </Project>
-
+    
       <Project>
         <Link to="https://playermusic-amirsamoha.netlify.app">
           <Title>The player music </Title>
@@ -52,8 +52,22 @@ const OurWork = () => {
         </ProjectDescription>
       </Project>
 
+      
       <Project>
-        <ProjectTitle>Html&CSS and JS</ProjectTitle>
+        <Link to="https://musictubefree.netlify.app">
+          <Title>Free youtube channel </Title>
+        </Link>
+        <ProjectDescription>
+          A project that I used a free API from youtube that contains free music data, using
+          React and components to display clips and play music,I use Tailwind to make it similar like youtube.
+          <Link to="  https://github.com/AmirSamoha/youtube-chanel">
+            <GitLink>GitHub Link</GitLink>
+          </Link>
+        </ProjectDescription>
+      </Project>
+
+      <Project>
+        <ProjectTitle>Html & CSS and JS</ProjectTitle>
         <motion.div variants={lineAnimation} className="line"></motion.div>
       </Project>
 
@@ -115,4 +129,4 @@ const GitLink = styled.div`
   color: rgb(170, 74, 68);
 `;
 
-export default OurWork;
+export default MyWork;

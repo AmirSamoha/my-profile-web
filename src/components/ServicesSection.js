@@ -3,9 +3,11 @@ import React from "react";
 import clock from "../img/clock.svg";
 import diaphragm from "../img/diaphragm.svg";
 import teamwork from "../img/teamwork.svg";
+import myPhoto from "../img/me.jpeg"
 //styeld component
 import { Image, Description, About } from "../styles";
 import styled from "styled-components";
+
 
 function ServicesSection() {
   return (
@@ -41,7 +43,7 @@ function ServicesSection() {
         </Cards>
       </Description>
       <Image>
-        <img src="https://cdn.pixabay.com/photo/2018/09/22/11/34/business-3695073_960_720.jpg" alt="" />
+        <img src={myPhoto} alt="myPhoto" />
       </Image>
     </Services>
   );

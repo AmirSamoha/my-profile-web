@@ -11,7 +11,7 @@ const AboutSection = () => {
   return (
     //styled About
     <About>
-      {/* styled Description */}
+    
       <Description>
         <div className="title">
           <Hide>
@@ -35,7 +35,7 @@ const AboutSection = () => {
             </FontStyle>
           </Hide>
         </div>
-        <p>HTML | CSS | JavaScript | React.js | Node.js | MongoDB </p>
+        <p>HTML | CSS | Bootstrap | Tailwind | JavaScript | React.js | Nextjs | Node.js | MongoDB </p>
         <Link to="/contact">
           <button>Contact Me</button>
         </Link>

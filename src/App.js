@@ -2,9 +2,9 @@ import React from "react";
 // import global style
 import GlobalStyle from "./components/GlobalStyle";
 // import pages
-import OurWork from "./pages/OurWork";
-import ContactUs from "./pages/ContactUs";
-import AboutUs from "./pages/AboutUs";
+import MyWork from "./pages/MyWork";
+import ContactMe from "./pages/ContactMe";
+import AboutMe from "./pages/AboutMe";
 import Nav from "./components/Nav";
 //router switcher between pages
 import { Routes, Route } from "react-router-dom";
@@ -15,10 +15,10 @@ function App() {
       <GlobalStyle />
       <Nav />
       <Routes>
-        <Route path="/" exact element={<AboutUs />} />
-        <Route path="/aboutus" exact element={<AboutUs />} />
-        <Route path="/work" exact element={<OurWork />} />
-        <Route path="/contact" exact element={<ContactUs />} />
+        <Route path="/" exact element={<AboutMe />} />
+        <Route path="/aboutus" exact element={<AboutMe />} />
+        <Route path="/work" exact element={<MyWork />} />
+        <Route path="/contact" exact element={<ContactMe />} />
       </Routes>
     </div>
   );

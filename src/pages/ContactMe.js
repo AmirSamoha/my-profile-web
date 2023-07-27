@@ -6,7 +6,7 @@ import github from "../img/github.svg";
 import linkedin from "../img/linkedin.svg";
 import { Link } from "react-router-dom";
 
-const ContactUs = () => {
+const ContactMe = () => {
   const [mail, setMail] = useState(false);
   const showMail = () => {
     setMail(!mail);
@@ -88,4 +88,4 @@ const Iconlinkedin = styled.img`
   padding-left: 16.7rem;
 `;
 
-export default ContactUs;
+export default ContactMe;
