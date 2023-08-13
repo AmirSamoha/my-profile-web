@@ -13,8 +13,11 @@ function AboutMe() {
       animate="show"
       exit="exit"
     >
-      <AboutSection />
-      <ServicesSection />
+      
+    <AboutSection />
+
+    <ServicesSection />
+
     </motion.div>
   );
 }

@@ -53,14 +53,36 @@ const NavStayeld = styled.div`
     padding-left: 10rem;
     position: relative;
   }
-  @media (max-width: 800px) {
+  @media (max-width: 806px) {
     flex-direction: column;
-    padding: 2rem 0rem;
+    padding: 1rem 0rem;
     ul {
-      padding: 2rem;
+      display: flex;
+      padding: 0.5;
       justify-content: center;
       width: 100%;
     }
+  }
+
+  @media (max-width: 612px) {
+    display: flex;
+    align-items: center;
+    padding: 0rem 0rem;
+    width: auto;
+    margin: 0;
+    ul {
+      padding: 0.5rem;
+      justify-content: flex-start;
+    }
+    #logo {
+    font-size: 1rem;
+    font-family: "Lobster", cursive;
+    font-weight: lighter;
+  }
+  li {
+    padding-left: 2.5rem;
+    position: relative;
+  }
   }
 `;
 

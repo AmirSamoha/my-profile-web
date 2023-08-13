@@ -90,6 +90,9 @@ const Work = styled(motion.div)`
   h2 {
     padding: 1rem 0rem;
   }
+  @media (max-width: 612px) {
+    padding: 0
+  }
 `;
 
 const Project = styled.div`

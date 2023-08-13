@@ -48,6 +48,25 @@ const ContactMe = () => {
 const ContactStyle = styled.div`
   padding: 5rem 10rem;
   min-height: 90vh;
+  @media (max-width: 806px) {
+    padding: 0rem 0rem;
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-content: flex-start;
+    justify-content: flex-start;
+  }
+
+  @media (max-width: 612px) {
+    padding: 0rem 0rem;
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-content: flex-start;
+    justify-content: flex-start;
+  }
 `;
 const Title = styled.h1`
   color: white;
@@ -70,22 +89,43 @@ const Social = styled.div`
     padding: 2rem;
     font-size: 2rem;
   }
+  @media (max-width: 612px) {
+    h3 {
+      padding: 1rem;
+      font-size: 20px;
+    }
+  }
 `;
 
 const Icon = styled.img`
   cursor: pointer;
   margin: 1rem;
   padding-left: 7.2rem;
+  @media (max-width: 612px) {
+    cursor: pointer;
+    margin: 0rem;
+    padding-left: 20px;
+  }
 `;
 const Icongithub = styled.img`
   cursor: pointer;
   margin: 1rem;
   padding-left: 17.2rem;
+  @media (max-width: 612px) {
+    cursor: pointer;
+    margin: 0rem;
+    padding-left: 120px;
+  }
 `;
 const Iconlinkedin = styled.img`
   cursor: pointer;
   margin: 1rem;
   padding-left: 16.7rem;
+  @media (max-width: 612px) {
+    cursor: pointer;
+    margin: 0rem;
+    padding-left: 118px;
+  }
 `;
 
 export default ContactMe;

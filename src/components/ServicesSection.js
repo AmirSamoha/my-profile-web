@@ -3,11 +3,10 @@ import React from "react";
 import clock from "../img/clock.svg";
 import diaphragm from "../img/diaphragm.svg";
 import teamwork from "../img/teamwork.svg";
-import myPhoto from "../img/me.jpeg"
+import myPhoto from "../img/me.jpeg";
 //styeld component
 import { Image, Description, About } from "../styles";
 import styled from "styled-components";
-
 
 function ServicesSection() {
   return (
@@ -38,7 +37,10 @@ function ServicesSection() {
               <img src={diaphragm} alt="diaphragm" />
               <h3>Personal Development</h3>
             </div>
-            <p>Taking responsibility, enjoying the process in an independent and group way.</p>
+            <p>
+              Taking responsibility, enjoying the process in an independent and
+              group way.
+            </p>
           </Card>
         </Cards>
       </Description>
@@ -62,9 +64,13 @@ const Services = styled(About)`
 const Cards = styled.div`
   display: flex;
   flex-wrap: wrap;
-  @media (max-width: 1300px){
-      justify-content: center;
-      }
+  @media (max-width: 1300px) {
+    justify-content: center;
+  }
+  @media (max-width: 806px) {
+    display: flex;
+    flex-direction: column;
+  }
 `;
 
 const Card = styled.div`
