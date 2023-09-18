@@ -47,8 +47,8 @@ const AboutSection = () => {
 };
 
 const FontStyle = styled.h2`
-  font-family: cursive;
-  font-size: 2.5rem;
+  font-family: sans-serif;
+  font-size: 2rem;
 `
 
 export default AboutSection;
